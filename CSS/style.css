@@ -1,0 +1,64 @@
+/* General styling of the website such as background color and formating */
+body{
+  padding:0;
+  margin:0;
+  background-color:#EFE3E0;
+  font:impact;
+}
+
+.container{
+  width:95%;
+  margin:auto;
+  overflow:hidden;
+}
+/*Specific styling of the website */
+/* All styling relating to the header and it's functions such as the search bar*/
+header{
+  background:#FFFFFF;
+  color:#FFFFFF;
+
+}
+
+header form{
+  float:right;
+  display:inline;
+}
+
+header a{
+  color:#FFFFFF;
+  text-decoration:none;
+  font-size: 60px;
+  width: 100%;
+}
+
+header ul{
+  margin:0;
+  padding:0;
+
+}
+
+header li{
+  display:inline;
+  padding: 0 45px 45px 0;
+  color:white;
+
+}
+/*
+header li:hover{
+  background-color: orange;
+}
+*/
+
+header nav{
+background:blue;
+}
+/*All styling relating to the categories and their 'boxes' */
+#categories{
+  margin-top:20px;
+}
+#categories .box{
+  float:left;
+  width: 30%;
+  text-align: center;
+  display:inline-block;
+}
