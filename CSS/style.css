@@ -1,64 +1,87 @@
-/* General styling of the website such as background color and formating */
+/* Global/General styling such as font and font colour. Also styling the
+wrapper in which most of the site is wrapped in. */
+html{
+  box-sizing:border-box;
+  font-family: 'Black Ops One', cursive;
+  color: black;
+}
+
 body{
-  padding:0;
-  margin:0;
-  background-color:#EFE3E0;
-  font:impact;
+  background: white;
+  margin: 30px 50px;
+  line-height: 1.4;
 }
 
-.container{
-  width:95%;
-  margin:auto;
-  overflow:hidden;
-}
-/*Specific styling of the website */
-/* All styling relating to the header and it's functions such as the search bar*/
-header{
-  background:#FFFFFF;
-  color:#FFFFFF;
+.wrapper{
+  display:grid;
+  grid-gap:20px;
 
 }
 
-header form{
-  float:right;
-  display:inline;
+/* Button styling as well as an on hover colour change */
+.btn{
+  background: #1a529b;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border:0;
 }
-
-header a{
-  color:#FFFFFF;
-  text-decoration:none;
-  font-size: 60px;
-  width: 100%;
-}
-
-header ul{
-  margin:0;
-  padding:0;
-
-}
-
-header li{
-  display:inline;
-  padding: 0 45px 45px 0;
-  color:white;
-
-}
-/*
-header li:hover{
+.btn:hover{
   background-color: orange;
+  color: #fff;
 }
-*/
 
-header nav{
-background:blue;
+img{
+  max-width:100%;
+
 }
-/*All styling relating to the categories and their 'boxes' */
-#categories{
-  margin-top:20px;
+/* All styling related to the navigation bar including a colour change on hover*/
+.main-nav ul{
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-#categories .box{
-  float:left;
-  width: 30%;
+
+.main-nav a{
+  background: #1a529b;
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
   text-align: center;
-  display:inline-block;
+  color: #fff;
+  font-size: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover{
+  background-color: orange;
+  color: #fff;
+}
+/* Little styling just to change the font size of the descript */
+.top-container{
+  font-size: 1.5rem;
+}
+/* All styling relating to the 'categories' section. This includes the boxes and
+the button to take them to the relevant page.*/
+.categories{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+
+.category{
+  background: #ddd;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 5px rgba(104,104,104,0.8)
+}
+/* Little style to the footer to clearly mark the end of a page or section to the
+user*/
+footer{
+  font-size: 1.5rem;
+  background: #1a529b;
+  color: #fff;
+  text-align:center;
 }

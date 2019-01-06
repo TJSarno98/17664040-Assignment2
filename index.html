@@ -1,64 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width">
-    <title>Truffle Shuffle</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-  </head>
-
+<head>
+  <!-- Linking the relevant stylesheets and fonts both from google fonts and font
+  awesome. Also will be where the javascript file is linked to when needed on
+other pages of the site.-->
+  <meta name="viewport" content="width=device-width, intial-scale-1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+  <title>TruffleShuffle</title>
+</head>
   <body>
-    <!-- Creating the head of the page which includes the logo, search bar
-    and navigation to the site. This is also a sticky header following <thead>
-      user as they scroll through the site. -->
-    </thead>
-      <header>
-        <div class="container">
-            <h1>
-              <img src="./assets/logo.png" alt="Truffle Shuffle Logo">
-                <form>
-                  <input type="search" placeholder="Enter Search...">
-                  <button type="submit" class"searchbutton">Search</button>
-                </form>
-            </h1>
+    <!-- Creating the wrapper which most of the site is wrapped in allowing
+  it to have a block like structure as I had previously designed -->
+    <div class="wrapper">
+      <!-- Simple navigation bar using an unordered list -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <!-- Jumping to a section of the homepage, whereas the others will
+        be seperate pages. -->
+          <li><a href="#jumptocategories">Categories</a></li>
+          <li><a href="#">Customiser</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+        <!-- Simple video showcase that loops and is muted, the width also scales
+      to make a more responsive site. Underneath the video is a brief description
+    of the site and it's products-->
+      <section class="top-container">
+        <header class="showcase">
+          <video width= 100% height =750px autoplay muted loop>
+            <source src="./Assets/videoplayback.mp4" type="video/mp4">
+            </video>
+          <h1>What is TruffleShuffle?</h1>
+          <p>
+            TRUFFLESHUFFLE IS THE OFFICIAL HOME OF COOL T-SHIRTS, RETRO GIFTS & MORE...
+Whether you’re looking for an old school treat for yourself or for a fellow nostalgia fan, you’re sure to find a whole host of retro goodies which will make your inner child smile.
+Our cool tees, retro gifts and accessories are inspired by the best old school TV, movies, music & more!
+          </p>
 
-
-              <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="placeholder1.html">placeholder1</a></li>
-                  <li><a href="placeholder2.html">placeholder2</a></li>
-                </ul>
-
-      </header>
-
-<!-- This part deals with the boxes which will take the user to the relevant
-pages of the site, being another form of navigation. -->
-      <section id="categories">
-        <div class="container">
-          <div class="box">
-            <h3>Placeholder<h3>
-              <p>Text</p>
-          </div>
-          <div class="box">
-            <h3>Placeholder<h3>
-              <p>Text</p>
-          </div>
-          <div class="box">
-            <h3>Placeholder<h3>
-              <p>Text</p>
-          </div>
-        </div>
+What are you waiting for? Browse, reminisce and RELAX!
+        </header>
+      </div>
       </section>
 
-      <footer>
-        <p>Music while you browse?</p>
-        <audio controls width="100px" height = "100px">
-          <source src="./assets/browsing.mp3">
-        </audio>
+      <!-- All of the categories on the site and their relevant links and icons -->
+      <a id="jumptocategories"></a>
+      <section class="categories">
 
+        <div class="category">
+          <i class="fas fa-tshirt fa-4x"></i>
+          <h2>T-Shirts<h2>
+            <a href="" class="btn">Browse</a>
+            </div>
 
-      </footer>
+            <div class="category">
+              <i class="fas fa-home fa-4x"></i>
+              <h2>Homeware<h2>
+                <a href="" class="btn">Browse</a>
+                </div>
 
+                <div class="category">
+                  <i class="fas fa-theater-masks fa-4x"></i>
+                  <h2>Fancy Dress<h2>
+                    <a href="" class="btn">Browse</a>
+                    </div>
 
+                    <div class="category">
+                      <i class="fas fa-dice fa-4x"></i>
+                      <h2>Toys and Games<h2>
+                        <a href="" class="btn">Browse</a>
+                        </div>
+
+                        <div class="category">
+                          <i class="fas fa-gift fa-4x"></i>
+                          <h2>Gifts<h2>
+                            <a href="" class="btn">Browse</a>
+                            </div>
+
+                            <div class="category">
+                              <i class="fas fa-socks fa-4x"></i>
+                              <h2>Accesories<h2>
+                                <a href="" class="btn">Browse</a>
+                                </div>
+          </section>
+          <!-- Footer to mark the end of the page. -->
+          <footer>
+            <p> TruffleShuffle &reg;</p>
+          </footer>
   </body>
-  </html>
+</html>
