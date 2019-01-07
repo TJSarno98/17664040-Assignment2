@@ -85,3 +85,10 @@ footer{
   color: #fff;
   text-align:center;
 }
+
+/* All styling relating to the canvas */
+canvas{
+  border: 1px solid black;
+  background: url("./Assets/shirt.jpg");
+  background-repeat:no-repeat;
+}
