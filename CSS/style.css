@@ -59,7 +59,7 @@ img{
   color: #fff;
 }
 /* Little styling just to change the font size of the description */
-.top-container{
+.introduction{
   font-size: 1.5rem;
 }
 /* All styling relating to the 'categories' section. This includes the boxes and
@@ -83,6 +83,13 @@ footer{
   background: #1a529b;
   color: #fff;
   text-align:center;
+}
+
+/* Making it functional on mobile. */
+@media (max-width: 700px){
+  .main-nav ul{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* All styling relating to the canvas */
