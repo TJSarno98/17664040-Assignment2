@@ -10,10 +10,12 @@ background.onload = function(){
   context.drawImage(background,0,0)
 }
 
+// Setting up the canvas and creating a variable "down" to track mouse inputs.
 var context = canvas.getContext('2d');
 var down = false;
 context.lineWidth= 5;
 
+//Event listeners
 canvas.addEventListener('mousemove', draw);
 
 canvas.addEventListener('mousedown',function(){
@@ -45,17 +47,40 @@ function clear_canvas(){
  }
 
 //Adding functions to control line width
-function size_small(){
+function x_small(){
   context.lineWidth = 1;
+}
+function size_small(){
+  context.lineWidth = 5;
 }
 
 function size_medium(){
-  context.lineWidth = 3;
+  context.lineWidth = 9;
+}
+
+function size_large(){
+  context.lineWidth = 13;
+}
+
+function size_xlarge(){
+  context.lineWidth = 17;
 }
 
 //Adding functions to control line colour.
 function colour_red(){
-  context.strokeStyle ="#ff0000"
+  context.strokeStyle ="red";
+}
+function colour_blue(){
+  context.strokeStyle ="blue";
+}
+function colour_green(){
+  context.strokeStyle ="green";
+}
+function colour_black(){
+  context.strokeStyle ="#000";
+}
+function colour_purple(){
+  context.strokeStyle ="purple";
 }
 
 

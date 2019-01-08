@@ -52,14 +52,13 @@ img{
   text-align: center;
   color: #fff;
   font-size: 2rem;
-  box-shadow: var(--shadow);
 }
 
 .main-nav a:hover{
   background-color: orange;
   color: #fff;
 }
-/* Little styling just to change the font size of the descript */
+/* Little styling just to change the font size of the description */
 .top-container{
   font-size: 1.5rem;
 }
@@ -89,6 +88,70 @@ footer{
 /* All styling relating to the canvas */
 canvas{
   border: 1px solid black;
-  background: url("./Assets/shirt.jpg");
-  background-repeat:no-repeat;
+   padding-left: 0;
+   padding-right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+
+}
+
+.canvasbtn{
+  background: #1a529b;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
+}
+.canvasbtn:hover{
+  background-color: orange;
+  color: #fff;
+}
+.canvascolour1{
+  background: red;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
+}
+
+.canvascolour2{
+  background: blue;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
+}
+.canvascolour3{
+  background: green;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
+}
+.canvascolour4{
+  background: black;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
+}
+.canvascolour5{
+  background: purple;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
+}
+.canvascolour6{
+  background: yellow;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
+}
+.canvascolour7{
+  background: gray;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
+}
+.canvascolour8{
+  background: white;
+  color: #000;
+  font-size: 1.5rem;
+  font-family: 'Black Ops One', cursive;
 }
