@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <!-- Linking the relevant stylesheets and fonts both from google fonts and font
+  awesome. Also will be where the javascript file is linked to when needed on
+other pages of the site.-->
+  <meta name="viewport" content="width=device-width, intial-scale-1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <title>TruffleShuffle</title>
+</head>
+  <body>
+    <!-- Creating the wrapper which most of the site is wrapped in allowing
+  it to have a block like structure as I had previously designed -->
+    <div class="wrapper">
+      <!-- Simple navigation bar using an unordered list -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- Jumping to a section of the homepage, whereas the others will
+        be seperate pages. -->
+          <li><a href="#jumptocategories">Categories</a></li>
+          <li><a href="customiser.html">Customiser</a></li>
+          <li><a href="#">About</a></li>
+        </nav>
+        <div class="itemsheader">
+          <p id="totalprice">£0</p>
+          <p id="totalitems">Total Items:</p>
+        </div>
+
+        <!-- Items with their picture, price and description. -->
+        <div class="item">
+          <img src="">
+          <p id="itemdesc">Temp item desc</p>
+          <p class ="priceA" data_value ="14.99">£14.99</p>
+          <script src="./JS/items.js"></script>
+          <button onclick="addtocartA()">+</button>
+          <button onclick="minustocartA()">-</button>
+        </div>
+
+          <!-- Footer to mark the end of the page. -->
+          <footer>
+            <p> TruffleShuffle &reg;</p>
+          </footer>
+  </body>
+</html>

@@ -92,7 +92,27 @@ footer{
   }
 }
 
-/* All styling relating to the canvas */
+
+
+
+/* All styling relating to the items page */
+.itemsheader{
+  background: #1a529b;
+  width: 100%;
+  height: 3rem;
+
+
+}
+.itemsheader p{
+color: #fff;
+float:right;
+padding-right: 50px;
+}
+.item{
+}
+
+
+/* All styling relating to the Customiser Page */
 canvas{
   border: 1px solid black;
    padding-left: 0;
