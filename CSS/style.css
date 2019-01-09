@@ -97,6 +97,16 @@ footer{
   }
 }
 
+@media (max-width: 500px){
+  .main-nav ul{
+    grid-template-columns: 1fr;
+  }
+  /* Making font size larger to accomodate for smaller screen */
+  .description{
+    font-size: 2.5rem;
+  }
+}
+
 
 
 
