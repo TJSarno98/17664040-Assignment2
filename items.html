@@ -23,6 +23,7 @@ other pages of the site.-->
           <li><a href="#jumptocategories">Categories</a></li>
           <li><a href="customiser.html">Customiser</a></li>
           <li><a href="#">About</a></li>
+          <li><a href="demo.html">Demo</a></li>
         </nav>
         <div class="itemsheader">
           <p id="totalprice">£0</p>
@@ -30,14 +31,25 @@ other pages of the site.-->
         </div>
 
         <!-- Items with their picture, price and description. -->
+        <div class="itemwrapper">
         <div class="item">
-          <img src="">
+          <img src="./Assets/item1.jpg">
           <p id="itemdesc">Temp item desc</p>
           <p class ="priceA" data_value ="14.99">£14.99</p>
           <script src="./JS/items.js"></script>
-          <button onclick="addtocartA()">+</button>
-          <button onclick="minustocartA()">-</button>
+          <button class="itembtnplus" onclick="addtocartA()">+</button>
+          <button class="itembtnminus" onclick="minustocartA()">-</button>
         </div>
+
+        <div class="item">
+          <img src="./Assets/item2.jpg">
+          <p id="itemdesc">Temp item desc</p>
+          <p class ="priceA" data_value ="14.99">£14.99</p>
+          <script src="./JS/items.js"></script>
+          <button class="itembtnplus" onclick="addtocartA()">+</button>
+          <button class="itembtnminus" onclick="minustocartA()">-</button>
+        </div>
+      </div>
 
           <!-- Footer to mark the end of the page. -->
           <footer>

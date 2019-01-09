@@ -17,6 +17,11 @@ body{
   grid-gap:20px;
 
 }
+.description{
+  background: #ddd;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
 
 /* Button styling as well as an on hover colour change */
 .btn{
@@ -41,7 +46,7 @@ img{
   grid-gap: 20px;
   padding: 0;
   list-style: none;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .main-nav a{
@@ -100,8 +105,6 @@ footer{
   background: #1a529b;
   width: 100%;
   height: 3rem;
-
-
 }
 .itemsheader p{
 color: #fff;
@@ -109,7 +112,42 @@ float:right;
 padding-right: 50px;
 }
 .item{
+  background: #ddd;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+  width:auto;
+  float:left;
 }
+.itemwrapper{
+  font-size: 1.5rem;
+}
+.itembtnplus{
+  background-color: #7ac435;
+  color: #fff;
+  text-decoration: bold;
+  font-size: 2rem;
+  width: 3.5rem;
+  float:right;
+}
+.itembtnminus{
+  background-color: #dd1616;
+  color: #fff;
+  text-decoration: bold;
+  font-size: 2rem;
+  width: 3.5rem;
+  float:right;
+}
+
+/* All styling relating to the about page */
+.gallery{
+width: auto;
+height: auto;
+background: #ddd;
+padding: 0.5rem 1.61rem;
+box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+display:inline;
+}
+
 
 
 /* All styling relating to the Customiser Page */
