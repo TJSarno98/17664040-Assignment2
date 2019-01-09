@@ -7,7 +7,8 @@ other pages of the site.-->
   <link rel="stylesheet" href="./CSS/style.css">
   <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./JS/items.js"></script>
   <title>TruffleShuffle</title>
 </head>
   <body>
@@ -26,30 +27,79 @@ other pages of the site.-->
           <li><a href="demo.html">Demo</a></li>
         </nav>
         <div class="itemsheader">
-          <p id="totalprice">£0</p>
-          <p id="totalitems">Total Items:</p>
+          <div>Total :£<span id="total">0</span></div>
+          <div>Total Items : <span id="totalitems">0</span></div>
+          <!-- <p id="totalitems">Total Items:</p> -->
         </div>
 
         <!-- Items with their picture, price and description. -->
         <div class="itemwrapper">
         <div class="item">
           <img src="./Assets/item1.jpg">
-          <p id="itemdesc">Temp item desc</p>
-          <p class ="priceA" data_value ="14.99">£14.99</p>
-          <script src="./JS/items.js"></script>
-          <button class="itembtnplus" onclick="addtocartA()">+</button>
-          <button class="itembtnminus" onclick="minustocartA()">-</button>
+          <p id="itemdesc">Care Bear T-Shirt</p>
+          <p>£12.00</p>
+          <button class="add" data-amount="12" data-quantity="1">+</button>
+          <button class="subtract" data-amount="-12" data-quantity="-1">-</button>
         </div>
 
         <div class="item">
           <img src="./Assets/item2.jpg">
-          <p id="itemdesc">Temp item desc</p>
-          <p class ="priceA" data_value ="14.99">£14.99</p>
-          <script src="./JS/items.js"></script>
-          <button class="itembtnplus" onclick="addtocartA()">+</button>
-          <button class="itembtnminus" onclick="minustocartA()">-</button>
+          <p id="itemdesc">Marvel Heroes Set</p>
+          <p>£25.00</p>
+          <button class="add" data-amount="25" data-quantity="1">+</button>
+          <button class="subtract" data-amount="-25" data-quantity="-1">-</button>
         </div>
-      </div>
+
+        <div class="item">
+          <img src="./Assets/item3.jpg">
+          <p id="itemdesc">TMNT T-Shirt</p>
+          <p>£15.00</p>
+          <button class="add" data-amount="15" data-quantity="1">+</button>
+          <button class="subtract" data-amount="-15" data-quantity="-1">-</button>
+        </div>
+
+        <div class="item">
+          <img src="./Assets/item4.jpg">
+          <p id="itemdesc">Christmas Jumper</p>
+          <p>£6.00</p>
+          <button class="add" data-amount="6" data-quantity="1">+</button>
+          <button class="subtract" data-amount="-6" data-quantity="-1">-</button>
+        </div>
+
+        <div class="item">
+          <img src="./Assets/item5.jpg">
+          <p id="itemdesc">Harry Potter T-Shirt</p>
+          <p>£12.00</p>
+          <button class="add" data-amount="12" data-quantity="1">+</button>
+          <button class="subtract" data-amount="-12" data-quantity="-1">-</button>
+        </div>
+
+        <div class="item">
+          <img src="./Assets/item6.jpg">
+          <p id="itemdesc">Avengers Comic Tee</p>
+          <p>£11.00</p>
+          <button class="add" data-amount="11" data-quantity="1">+</button>
+          <button class="subtract" data-amount="-11" data-quantity="-1">-</button>
+        </div>
+
+        <div class="item">
+          <img src="./Assets/item7.jpg">
+          <p id="itemdesc">Cap America Hoodie</p>
+          <p>£24.00</p>
+          <button class="add" data-amount="24" data-quantity="1">+</button>
+          <button class="subtract" data-amount="-24" data-quantity="-1">-</button>
+        </div>
+
+        <div class="item">
+          <img src="./Assets/item8.jpg">
+          <p id="itemdesc">Roald Dahl Collection Tee</p>
+          <p>£16.00</p>
+          <button class="add" data-amount="16" data-quantity="1">+</button>
+          <button class="subtract" data-amount="-16" data-quantity="-1">-</button>
+        </div>
+
+
+
 
           <!-- Footer to mark the end of the page. -->
           <footer>
