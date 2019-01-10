@@ -46,7 +46,7 @@ img{
   grid-gap: 20px;
   padding: 0;
   list-style: none;
-  grid-template-columns: 1fr 1  fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .main-nav a{
@@ -96,11 +96,6 @@ footer{
     grid-template-columns: 1fr;
   }
 }
-
-@media (max-width: 500px){
-  .main-nav ul{
-    grid-template-columns: 1fr;
-  }
 
 
 
