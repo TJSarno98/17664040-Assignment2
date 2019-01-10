@@ -46,7 +46,7 @@ img{
   grid-gap: 20px;
   padding: 0;
   list-style: none;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1  fr 1fr 1fr 1fr;
 }
 
 .main-nav a{
@@ -135,15 +135,13 @@ text-align: center;
 .add{
   background-color: #7ac435;
   color: #fff;
-  text-decoration: bold;
   font-size: 2rem;
   width: 3.5rem;
   float:right;
 }
-.subtract{
+.subtract {
   background-color: #dd1616;
   color: #fff;
-  text-decoration: bold;
   font-size: 2rem;
   width: 3.5rem;
   float:right;
